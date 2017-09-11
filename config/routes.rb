@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # the default of "spree".
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'cart_test', to: 'cart_tests#index'
 end
